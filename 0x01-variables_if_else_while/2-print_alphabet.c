@@ -1,20 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - prints alphabets in lower case
  *
- * Return: Always 0 (success)
+ * Description: using the main function
+ * prints alphabets in lower case, followed be a new line
+ * Return: 0;
  */
 int main(void)
 {
-	char c = 'a';
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	while (c <= 'z')
+	for (i = 0; i < 26; i++)
 	{
-		putchar(c);
-		c++
+		putchar(alp[i]);
 	}
 	putchar('\n');
-
 	return (0);
 }
