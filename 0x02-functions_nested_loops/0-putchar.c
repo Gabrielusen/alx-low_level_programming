@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - print putchar
+ * main - Entry point
  *
- * Return: always 0
+ * Return: nothing, return void
  */
 
 int main(void)
@@ -18,5 +18,5 @@ int main(void)
 	_putchar('r');
 	_putchar('\n');
 
-	return (0);
+	return(0);
 }
