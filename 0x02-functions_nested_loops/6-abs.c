@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * _abs - computes the absolute value of an interger
+ * @c: is the int that will be used in the argument of the function.
  *
  * Return: Always 0.
  */
