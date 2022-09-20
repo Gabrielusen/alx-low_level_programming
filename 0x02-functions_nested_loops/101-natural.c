@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -8,13 +7,15 @@
  */
 int main(void)
 {
-	int i, j = 0;
+	int x = 1024, y, sum = 0;
 
-	for (i = 0; i < 1024; i++)
+	for (y = 0; y < x; y++)
 	{
-		if ((i % 3) == 0 || (i % 5) == 0)
-			j += i;
+		if ((y % 3 == 0) || (y % 5 == 0))
+		{
+			sum = sum + y;
+		}
 	}
-	printf("%d\n", j);
+	printf("%d\n", sum);
 	return (0);
 }
