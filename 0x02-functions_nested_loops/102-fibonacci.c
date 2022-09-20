@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - print first 50 fibonacci
  *
@@ -6,16 +7,19 @@
  */
 int main(void)
 {
-	long int i, x = 1, y = 2, sum = 0;
+	int i;
+	long int a1, a2, fa;
 
-	for (i = 0; i < 49; i++)
+	a1 = 1;
+	a2 = 2;
+	printf("%ld, %ld", a1, a2);
+	for (i = 0; i < 48; i++)
 	{
-		printf("%ld, "x);
-		sum = x + y;
-		x = y;
-		y = sum;
-		if (i == 48)
-			printf("%ld\n", x);
+		fa = a1 +a2;
+		printf(", %ld", fa);
+		a1 = a2;
+		a2 = fa;
 	}
+	printf("\n");
 	return (0);
 }
