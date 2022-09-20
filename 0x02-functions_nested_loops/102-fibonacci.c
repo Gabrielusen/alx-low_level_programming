@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * main - print first 50 fibonacci
  *
@@ -7,19 +6,23 @@
  */
 int main(void)
 {
-	int i;
-	long int a1, a2, fa;
+	unsigned long count, i, j, k;
 
-	a1 = 1;
-	a2 = 2;
-	printf("%ld, %ld", a1, a2);
-	for (i = 0; i < 48; i++)
+	i = 0;
+	j = 1;
+
+	for (count = 0; count < 50; count++)
 	{
-		fa = a1 +a2;
-		printf(", %ld", fa);
-		a1 = a2;
-		a2 = fa;
+		k = i + j;
+		i = j;
+		j = k;
+		printf("%lu", k);
+		if (count == 49)
+			putchar('\n');
+		else
+		{
+			printf(",");
+		}
 	}
-	printf("\n");
 	return (0);
 }
